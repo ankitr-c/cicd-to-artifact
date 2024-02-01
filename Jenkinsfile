@@ -4,7 +4,7 @@ pipeline {
         stage('Clone Stage') {
             steps {
                 echo 'Clone Stage'
-                git branch: 'main', credentialsId: 'git-pat', url: 'https://github.com/ankitr-c/py-flask.git'
+                git branch: 'main', url: 'https://github.com/ankitr-c/cicd-to-artifact.git'
             }
         }
         stage('Build Stage') {
